@@ -1,0 +1,15 @@
+{
+  "name": "artsy-open",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "preferGlobal": true,
+  "license": "MIT",
+  "dependencies": {
+    "colon-template": "^1.0.3",
+    "dashify": "^2.0.0",
+    "uri-scheme": "^1.0.76"
+  },
+  "bin": {
+    "artsy-open": "./index.js"
+  }
+}

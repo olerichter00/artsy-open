@@ -1,0 +1,18 @@
+module.exports = {
+  artistID: "banksy",
+  saleID: "moca-cleveland-benefit-auction-2021",
+  artworkID: "banksy-love-rat-signed-16",
+  auctionResultInternalID: "",
+  auctionID: "moca-cleveland-benefit-auction-2021",
+  geneID: "design",
+  showID: "first-floor-gallery-harare-amanda-mushate-nguve-inemuridzi",
+  viewing_room_id: "artcn-panacea-of-liu-zhenchen",
+  featureSlug: "",
+  artistSeriesID: "",
+  collectionID: "",
+  conversationID: "",
+  partnerID: "menconi-plus-schoelkopf",
+  fairID: "",
+  citySlug: "",
+  orderID: "",
+}
