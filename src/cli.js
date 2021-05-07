@@ -49,6 +49,22 @@ const getPath = (page, defaults) => {
   return template(templatePath, defaults)
 }
 
+const getURL = path => {
+  if (path.includes("://")) return path
+
+  return `${baseUrls[env]}/${path}`
+}
+
+const findAndRemove = (input, funk) => {
+  const index = input.findIndex(funk)
+  const element = input[index]
+  if (index > -1) {
+    input.splice(index, 1)
+  }
+
+  return element
+}
+
 const args = process.argv.slice(2)
 
 if (args[0] === "list") {
@@ -73,22 +89,13 @@ if (!args[0] || args[0] === "help") {
   exit()
 }
 
-const findAndRemove = (input, funk) => {
-  const index = input.findIndex(funk)
-  const element = input[index]
-  if (index > -1) {
-    input.splice(index, 1)
-  }
-
-  return element
-}
-
 const platform = findAndRemove(args, e => ["android", "ios", "web"].includes(e)) || DEFAULT_PLATFORM
 const env =
   findAndRemove(args, e => ["prod", "production", "staging", "local"].includes(e)) || DEFAULT_ENV
 
 page = args[0]
 
-const uri = `${baseUrls[env]}/${getPath(page, createVariables(variables, args))}`
+const path = getPath(page, createVariables(variables, args))
+const uri = getURL(path)
 
 openUri(uri, platform)
