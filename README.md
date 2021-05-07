@@ -1,6 +1,6 @@
 # Artsy Open
 
-Open Artsy urls on you iOS or Android emulator from the command line.
+Open Artsy urls on you iOS or Android emulator from the terminal.
 
 Devices:
 
@@ -31,13 +31,13 @@ artsy-open list
 Open URL with alias (using default variables)
 
 ```
-artsy-open artwork
+artsy-open auction-result
 ```
 
 Open URL with alias (using custom variables):
 
 ```
-artsy-open artwork artworkID:banksy
+artsy-open artwork-shows artworkID:banksy
 ```
 
 Open URL:

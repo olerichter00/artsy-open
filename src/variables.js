@@ -13,6 +13,6 @@ module.exports = {
   conversationID: "",
   partnerID: "menconi-plus-schoelkopf",
   fairID: "",
-  citySlug: "",
+  citySlug: "berlin",
   orderID: "",
 }
