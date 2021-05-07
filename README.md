@@ -1,9 +1,24 @@
 # Artsy Open
 
-Open Artsy URLS on you iOS or Android emulator.
+Open Artsy urls on you iOS or Android emulator from the command line.
 
-Devices: `ios` (default), `android`, `web`
-Environment: `staging` (default), `local`, `production`
+Devices:
+
+- ios (default)
+- android
+- web
+
+Environment:
+
+- staging (default)
+- production
+- localhost
+
+## Install
+
+```
+npm install -g git+https://github.com/olerichter00/artsy-open
+```
 
 ## Example Usage
 
